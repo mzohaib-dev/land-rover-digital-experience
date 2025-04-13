@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Organetto";
+    src: url(./components/fonts/organetto-ultrabold-semiexp.ttf)
+      format("truetype");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Mandatory";
+    src: url(./components/fonts/Mandatory.otf) format("otf");
+  }
+}
+@layer base {
+  @font-face {
+    font-family: "Kajiro";
+    src: url(./components/fonts/Kajiro.ttf) format("truetype");
+  }
+}
+@layer base {
+  @font-face {
+    font-family: "Crotah";
+    src: url(./components/fonts/CrotahFreeVersionItalic-z8Ev3.ttf)
+      format("truetype");
+  }
+}
