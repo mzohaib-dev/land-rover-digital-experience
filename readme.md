@@ -73,12 +73,11 @@ Land-Rover-Website-Reimagine/
    npm install
    ```
 
-4. Usage
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-Start the development server:
-`bash
-    npm run dev
-    `
 Open your browser and navigate to http://localhost:3000.
 
 Explore the website and enjoy the interactive experience!
