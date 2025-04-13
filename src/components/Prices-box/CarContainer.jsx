@@ -7,57 +7,57 @@ const carsModel = [
   {
     name: "Range Rover Evoque",
     id: 0,
-    img: "https://jlr.scene7.com/is/image/jlr/L55124GL_303101952_001_DX_ENTRY?wid=1500",
+    img: "image/CarContainer/Range Rover Evoque.png",
   },
   {
     name: "Range Rover Velar",
     id: 1,
-    img: "https://jlr.scene7.com/is/image/jlr/L56024GL_303101279_010?wid=1500",
+    img: "image/CarContainer/Range Rover Velar.png",
   },
   {
     name: "Range Rover Sport",
     id: 2,
-    img: "https://jlr.scene7.com/is/image/jlr/L46125GL_303103154_019?wid=1500",
+    img: "image/CarContainer/Range Rover Sport.png",
   },
   {
     name: "Range Rover",
     id: 3,
-    img: "https://jlr.scene7.com/is/image/jlr/L460_22MY_117_GLHD_DX?wid=1500",
+    img: "image/CarContainer/Range Rover.png",
   },
   {
     name: "Defender 130",
     id: 4,
-    img: "https://jlr.scene7.com/is/image/jlr/L66325GL_303103289_012?wid=1500",
+    img: "image/CarContainer/Defender 130.png",
   },
   {
     name: "Defender 110",
     id: 5,
-    img: "https://jlr.scene7.com/is/image/jlr/L66325GL_303103289_027?wid=1500",
+    img: "image/CarContainer/Defender 110.png",
   },
   {
     name: "Defender 90",
     id: 6,
-    img: "https://jlr.scene7.com/is/image/jlr/L66325GL_303103289_010?wid=1500",
+    img: "image/CarContainer/Defender 90.png",
   },
   {
     name: "Discovery Sport",
     id: 7,
-    img: "https://jlr.scene7.com/is/image/jlr/L55024GL_303101775_021_NAV_ENTRY-2?wid=1500",
+    img: "image/CarContainer/Discovery Sport.png",
   },
   {
     name: "Discovery",
     id: 8,
-    img: "https://jlr.scene7.com/is/image/jlr/L46224GL_303101655_001_ENTRY-2?wid=1500",
+    img: "image/CarContainer/Discovery.png",
   },
   {
     name: "Land Rover Electric",
     id: 9,
-    img: "https://jlr.scene7.com/is/image/jlr/L56024GL_303101279_037_DC_DX?wid=1500",
+    img: "image/CarContainer/Land Rover Electric.png",
   },
   {
     name: "Range Rover By SV",
     id: 10,
-    img: "https://jlr.scene7.com/is/image/jlr/L460_22MY_SV_002_GLHD_DX_2560x1440?wid=1500",
+    img: "image/CarContainer/Range Rover By SV.png",
   },
 ];
 const CarContainer = () => {
