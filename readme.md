@@ -27,40 +27,66 @@ This project aims to create a visually appealing and interactive website inspire
 
 ## Project Structure
 
-Land-Rover-Website-Reimagine/ ├── public/ │ ├── assets/ │ │ ├── 1169041.jpg │ │ ├── 1312641.jpg │ │ └── ... │ ├── land*rover_defender*-\_edition_grasmere_green.glb │ └── vite.svg ├── src/ │ ├── components/ │ │ ├── Cursor.jsx │ │ └── ... │ ├── App.jsx │ ├── App.css │ ├── index.css │ ├── main.jsx │ └── styles.css ├── .eslintrc.cjs ├── .gitignore ├── index.html ├── package.json ├── postcss.config.js ├── tailwind.config.js ├── vite.config.js └── README.md
+Land-Rover-Website-Reimagine/
+├── public/
+│ ├── assets/
+│ │ ├── 1169041.jpg
+│ │ ├── 1312641.jpg
+│ │ └── ...
+│ ├── land*rover_defender*-\_edition_grasmere_green.glb
+│ └── vite.svg
+├── src/
+│ ├── components/
+│ │ ├── Cursor.jsx
+│ │ └── ...
+│ ├── App.jsx
+│ ├── App.css
+│ ├── index.css
+│ ├── main.jsx
+│ └── styles.css
+├── .eslintrc.cjs
+├── .gitignore
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
 
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/mzohaib-dev/land-rover-digital-experience.git
    ```
 
-2.Navigate to the project directory:
+2. Navigate to the project directory:
 
-cd land-rover-digital-experience
-3.Install dependencies:
-npm install
+   ```bash
+   cd land-rover-digital-experience
+   ```
 
-Usage
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Usage
+
 Start the development server:
-npm run dev
-
+`bash
+    npm run dev
+    `
 Open your browser and navigate to http://localhost:3000.
 
 Explore the website and enjoy the interactive experience!
 
-Technologies Used
-HTML5 and CSS3: For structure and styling.
-React: For building reusable UI components.
-Tailwind CSS: For utility-first styling.
-GSAP: For creating smooth animations.
-Vite: For fast development and bundling.
-Contributing
-Contributions are welcome! If you'd like to contribute, please follow these steps:
+## Technologies Used
 
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature-name).
-Commit your changes (git commit -m 'Add some feature').
-Push to the branch (git push origin feature/your-feature-name).
-Open a pull request.
+- **HTML5 and CSS3**: For structure and styling.
+- **React**: For building reusable UI components.
+- **Tailwind CSS**: For utility-first styling.
+- **GSAP**: For creating smooth animations.
+- **Vite**: For fast development and bundling.
