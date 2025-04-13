@@ -27,23 +27,24 @@ This project aims to create a visually appealing and interactive website inspire
 
 ## Project Structure
 
+```plaintext
 Land-Rover-Website-Reimagine/
 ├── public/
-│ ├── assets/
-│ │ ├── 1169041.jpg
-│ │ ├── 1312641.jpg
-│ │ └── ...
-│ ├── land*rover_defender*-\_edition_grasmere_green.glb
-│ └── vite.svg
+│   ├── assets/
+│   │   ├── 1169041.jpg
+│   │   ├── 1312641.jpg
+│   │   └── ...
+│   ├── land_rover_defender_-_edition_grasmere_green.glb
+│   └── vite.svg
 ├── src/
-│ ├── components/
-│ │ ├── Cursor.jsx
-│ │ └── ...
-│ ├── App.jsx
-│ ├── App.css
-│ ├── index.css
-│ ├── main.jsx
-│ └── styles.css
+│   ├── components/
+│   │   ├── Cursor.jsx
+│   │   └── ...
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   ├── main.jsx
+│   └── styles.css
 ├── .eslintrc.cjs
 ├── .gitignore
 ├── index.html
@@ -52,6 +53,7 @@ Land-Rover-Website-Reimagine/
 ├── tailwind.config.js
 ├── vite.config.js
 └── README.md
+```
 
 ## Installation
 
