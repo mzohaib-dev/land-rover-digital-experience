@@ -75,7 +75,7 @@ const CarContainer = () => {
       <div className="sticky top-0 flex flex-col h-screen w-3/4 items-center">
         <div className="lg:relative absolute lg:top-[20%] top-[5%] mr-[145%] lg:mr-[0%] aspect-video lg:w-full w-[80vw] rounded-2xl bg-slate-100 [&:has(>_.active-card)]:bg-transparent">
           {carsModel.map((car) => (
-            <CartComp id={car.id} img={car.img} name={car.name} />
+            <CartComp key={car.id} id={car.id} img={car.img} name={car.name} />
           ))}
         </div>
         <div className="lg:visible hidden relative w-full top-[40%]">
