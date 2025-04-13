@@ -6,6 +6,7 @@ A modern reimagining of the Land Rover website, built with HTML, CSS, JavaScript
 
 - [Overview](#overview)
 - [Features](#features)
+- [Project Structure](#project-structure)
 
 ## Overview
 
@@ -13,8 +14,8 @@ This project aims to create a visually appealing and interactive website inspire
 
 ## Features
 
-- Responsive design for all screen sizes.
-- Smooth animations using GSAP.
-- Modular and reusable components with React.
-- Tailwind CSS for rapid styling.
-- 3D model integration using `.glb` files.
+- **Responsive Design**: Optimized for all screen sizes and devices.
+- **Smooth Animations**: Powered by GSAP for a seamless user experience.
+- **Reusable Components**: Built with React for modularity and scalability.
+- **Rapid Styling**: Tailwind CSS for utility-first styling.
+- **3D Model Integration**: Support for `.glb` files to enhance interactivity.
