@@ -18,10 +18,6 @@ const CartComp = ({ id, img, name }) => {
         src={img}
         alt={name}
       />
-      {/* <button className=" absolute p-2 top-6 left-6 bg-black text-white rounded-xl shadow-lg">
-        {" "}
-        Show More
-      </button> */}
     </div>
   );
 };

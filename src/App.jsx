@@ -65,7 +65,6 @@ export default function App() {
 
   useEffect(() => {
     const lenis = new Lenis();
-    lenis.scrollTo(0, { immediate: true });
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);

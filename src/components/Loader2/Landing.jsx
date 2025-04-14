@@ -3,7 +3,9 @@ import { gsap } from "gsap";
 import "./style.css";
 
 const Landing = () => {
+  const hasSeenAnimation = sessionStorage.getItem("hasSeenAnimation");
   useEffect(() => {
+    if (hasSeenAnimation) return;
     gsap.from(".images div", 1, {
       delay: 1,
       yPercent: -500,
@@ -40,6 +42,10 @@ const Landing = () => {
         clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
         ease: "power4.inOut",
         delay: 3.2,
+        onComplete: () => {
+          console.log("animation complete");
+          sessionStorage.setItem("hasSeenAnimation", "true");
+        },
       });
     };
 
@@ -53,64 +59,71 @@ const Landing = () => {
         overlay.removeEventListener("click", handleClick);
       }
     };
-  }, []);
+  }, [hasSeenAnimation]);
 
   return (
     <div>
       <div className="container">{/* put pages here */}</div>
-      <div className="loader">
-        <div className="img">
-          <img src="assets/2021_land_rover_discovery_16_2560x1440.jpg" alt="" />
-        </div>
-        <div className="img">
-          <img
-            src="assets/range_rover_sport_park_city_edition_2024_5k-3840x2160.jpg"
-            alt=""
-          />
-        </div>
-        <div className="img">
-          <img
-            src="assets/2022_land_rover_defender_v8_110_2_2560x1440.jpg"
-            alt=""
-          />
-        </div>
-        <div className="img">
-          <img
-            src="assets/2022_land_rover_defender_v8_110_6_2560x1440.jpg"
-            alt=""
-          />
-        </div>
-        <div className="img">
-          <img src="assets/2022_range_rover_2_2560x1440.jpg" alt="" />
-        </div>
-        <div className="img">
-          <img
-            src="assets/land_rover_defender_110_country_pack_first_edition_2020_4k_2-3840x2160.jpg"
-            alt=""
-          />
-        </div>
-        <div className="img">
-          <img src="assets/peakpx (1).jpg" alt="" />
-        </div>
-      </div>
-      <div className="overlay">
-        <div className="images">
-          <div className="imgg img-1"></div>
-          <div className="imgg img-2"></div>
-          <div className="imgg img-3"></div>
-          <div className="imgg img-4"></div>
-          <div className="imgg img-5"></div>
-          <div className="imgg img-6"></div>
-          <div className="imgg img-7"></div>
-          <div className="imgg img-8"></div>
-        </div>
-        <div className="button-container">
-          <span className="mask">Click to Start</span>
-          <button className="btn-7" type="button" name="Hover">
-            <span>Exploring</span>
-          </button>
-        </div>
-      </div>
+      {!hasSeenAnimation && (
+        <>
+          <div className="loader">
+            <div className="img">
+              <img
+                src="assets/2021_land_rover_discovery_16_2560x1440.jpg"
+                alt=""
+              />
+            </div>
+            <div className="img">
+              <img
+                src="assets/range_rover_sport_park_city_edition_2024_5k-3840x2160.jpg"
+                alt=""
+              />
+            </div>
+            <div className="img">
+              <img
+                src="assets/2022_land_rover_defender_v8_110_2_2560x1440.jpg"
+                alt=""
+              />
+            </div>
+            <div className="img">
+              <img
+                src="assets/2022_land_rover_defender_v8_110_6_2560x1440.jpg"
+                alt=""
+              />
+            </div>
+            <div className="img">
+              <img src="assets/2022_range_rover_2_2560x1440.jpg" alt="" />
+            </div>
+            <div className="img">
+              <img
+                src="assets/land_rover_defender_110_country_pack_first_edition_2020_4k_2-3840x2160.jpg"
+                alt=""
+              />
+            </div>
+            <div className="img">
+              <img src="assets/peakpx (1).jpg" alt="" />
+            </div>
+          </div>
+          <div className="overlay">
+            <div className="images">
+              <div className="imgg img-1"></div>
+              <div className="imgg img-2"></div>
+              <div className="imgg img-3"></div>
+              <div className="imgg img-4"></div>
+              <div className="imgg img-5"></div>
+              <div className="imgg img-6"></div>
+              <div className="imgg img-7"></div>
+              <div className="imgg img-8"></div>
+            </div>
+            <div className="button-container">
+              <span className="mask">Click to Start</span>
+              <button className="btn-7" type="button" name="Hover">
+                <span>Exploring</span>
+              </button>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };
